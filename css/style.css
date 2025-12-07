@@ -1,4 +1,59 @@
-/* temporary style to confirm CSS loads. */
 h1 {
-  color: blue;
+  color: #4c241d;
+  text-align: center;
+  font-family: "sauna-new", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
 }
+
+p {
+  color: #4c241d;
+  text-align: center;
+  font-family: "sauna-new", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16rem 4rem;
+  min-height: 100vh;
+}
+
+.wizard {
+  width: 20rem;
+  height: 20rem;
+}
+
+.game-content {
+  display: flex;
+  width: 40rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.game-controls {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.625rem;
+  align-self: stretch;
+}
+
+button {
+  border-radius: 1rem;
+  background: #6b4f5b;
+  padding: 1.25rem 2.5rem;
+  flex: 1 0 0;
+  font-family: "sauna-new", sans-serif;
+  font-size: 1.5rem;
+  color:aliceblue;
+  border-color: #6b4f5b;
+}
+
