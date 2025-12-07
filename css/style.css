@@ -2,7 +2,7 @@ h1 {
   color: #4c241d;
   text-align: center;
   font-family: "sauna-new", sans-serif;
-  font-size: 3rem;
+  font-size: 1.75rem;
   font-style: normal;
   font-weight: 700;
 }
@@ -11,49 +11,112 @@ p {
   color: #4c241d;
   text-align: center;
   font-family: "sauna-new", sans-serif;
-  font-size: 2rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 16rem 4rem;
-  height: 100vh;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  gap: 2rem;
 }
 
 .wizard {
-  width: 20rem;
-  height: 20rem;
+  width: 100%;
+  max-width: 12rem;
+  height: auto;
 }
 
 .game-content {
   display: flex;
-  width: 40rem;
+  width: 100%;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  align-self: stretch;
+  gap: 2rem;
 }
 
 .game-controls {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
   gap: 0.625rem;
-  align-self: stretch;
+  width: 100%;
 }
 
 button {
   border-radius: 1rem;
   background: #6b4f5b;
-  padding: 1.25rem 2.5rem;
-  flex: 1 0 0;
+  padding: 1rem 1.5rem;
   font-family: "sauna-new", sans-serif;
-  font-size: 1.5rem;
-  color:aliceblue;
-  border-color: #6b4f5b;
+  font-size: 1.125rem;
+  color: aliceblue;
+  border: 2px solid #6b4f5b;
+  cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    padding: 4rem 2rem;
+  }
+  
+  .wizard {
+    max-width: 16rem;
+  }
+  
+  .game-content {
+    width: 80%;
+  }
+  
+  .game-controls {
+    flex-direction: row;
+  }
+  
+  button {
+    padding: 1.125rem 2rem;
+    font-size: 1.25rem;
+    flex: 1 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 2rem;
+  }
+  
+  .container {
+    flex-direction: row;
+    padding: 4rem;
+    gap: 3rem;
+  }
+  
+  .wizard {
+    max-width: 20rem;
+  }
+  
+  .game-content {
+    width: 50%;
+  }
+  
+  button {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.5rem;
+  }
+}
