@@ -21,7 +21,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 16rem 4rem;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .wizard {
